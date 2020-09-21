@@ -313,7 +313,7 @@ var click = function(d){
   var trace = backtrace(d);
 
   var link = function(path, dest){
-    return path.replace(/[^\/]+:\d+/, function(x){ return "<a target='_blank' href='"+ dest +"'>" + x + "</a>"})
+    return path.replace(/[^\/]+:\d+/, function(x){ return "<a target='_blank' href='"+ dest +"'>" + x + "<" + "/" + "a" + ">"})
   };
 
   var linkify = function(path){
